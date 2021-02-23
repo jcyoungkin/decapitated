@@ -13,24 +13,21 @@ export default function FrontPage(props: any): JSX.Element {
       <main className="content">
         <Hero
           title="Decapitate This!"
-          buttonText="Developer Docs"
-          buttonURL="https://developers.wpengine.com/"
-          button2Text="Headless on GitHub"
-          button2URL="https://github.com/wpengine/headless-framework"
-          bgImage="/images/headless_hero_background.jpg"
+          buttonText="Headless Horseman"
+          buttonURL="https://www.youtube.com/watch?v=ysNSKrH8hHo"
+          bgImage="https://dyn1.heritagestatic.com/lf?set=path%5B1%2F9%2F4%2F3%2F6%2F19436098%5D&call=url%5Bfile%3Aproduct.chain%5D"
           id={styles.home_hero}>
           <p>
-            WP&nbsp;Engine’s Headless WordPress Framework includes this example
-            project, the{' '}
-            <a href="https://github.com/wpengine/headless-framework#plugin-features">
-              headless WordPress plugin
+            Some great examples of the Headless Horseman include {' '}
+            <a href="https://disney.fandom.com/wiki/The_Headless_Horseman">
+              Disney's version
             </a>
-            ,{' '}
-            <a href="https://www.npmjs.com/package/@wpengine/headless">
-              headless package
+            , as well as {' '}
+            <a href="https://en.wikipedia.org/wiki/Sleepy_Hollow_(film)">
+              Sleepy Hollow
             </a>
-            , and <a href="https://developers.wpengine.com/">tutorials</a> to
-            make building headless WordPress sites fast and fun.
+            , but don't forget to read about the <a href="https://en.wikipedia.org/wiki/The_Legend_of_Sleepy_Hollow">Legen of Sleepy Hollow</a> to
+            get a better understanding of where this fiction originates from.
           </p>
         </Hero>
         <section className={styles.explore}>
