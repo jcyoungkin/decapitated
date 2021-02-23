@@ -9,7 +9,7 @@ export default function FrontPage(props: any): JSX.Element {
 
   return (
     <>
-      <Header title={settings?.title} description={settings?.description} />
+
       <main className="content">
         <Hero
           title="Decapitate This!"
@@ -24,15 +24,13 @@ export default function FrontPage(props: any): JSX.Element {
 
         <Posts
           posts={posts?.nodes}
-          heading="Latest Posts"
-          intro="The Posts component in wp-templates/front-page.tsx shows the latest six posts from the connected WordPress site."
           headingLevel="h2"
           postTitleLevel="h3"
           count={6}
           id={styles.post_list}
         />
       </main>
-      <Footer copyrightHolder={settings?.title} />
+      
     </>
   );
 }
