@@ -18,81 +18,10 @@ export default function FrontPage(props: any): JSX.Element {
           bgImage="https://dyn1.heritagestatic.com/lf?set=path%5B1%2F9%2F4%2F3%2F6%2F19436098%5D&call=url%5Bfile%3Aproduct.chain%5D"
           id={styles.home_hero}>
           <p>
-            Some great examples of the Headless Horseman include <a href="https://disney.fandom.com/wiki/The_Headless_Horseman">Disney's version</a>, as well as <a href="https://en.wikipedia.org/wiki/Sleepy_Hollow_(film)">Sleepy Hollow</a>, but don't forget to read about the <a href="https://en.wikipedia.org/wiki/The_Legend_of_Sleepy_Hollow">Legen of Sleepy Hollow</a> to get a better understanding of where this fiction originates from.
+            Some great examples of the Headless Horseman include the animated classic from<a href="https://disney.fandom.com/wiki/The_Headless_Horseman">Disney</a>, as well as the Johnny Depp version, <a href="https://en.wikipedia.org/wiki/Sleepy_Hollow_(film)">Sleepy Hollow</a>, but don't forget to read up on the <a href="https://en.wikipedia.org/wiki/The_Legend_of_Sleepy_Hollow">Legen of Sleepy Hollow</a> to get a better understanding of where this fiction originates from.
           </p>
         </Hero>
-        <section className={styles.explore}>
-          <div className="wrap">
-            <h2>Explore this Example Project</h2>
-            <p>
-              This headless example project uses{' '}
-              <a href="https://nextjs.org/">Next.js</a>,{' '}
-              <a href="https://graphql.org/">GraphQL</a>,{' '}
-              <a href="https://www.apollographql.com/">Apollo</a> and the{' '}
-              <a href="https://www.npmjs.com/package/@wpengine/headless">
-                WP&nbsp;Engine headless package
-              </a>{' '}
-              for WordPress integration. Dive in and edit this template at{' '}
-              <code>wp-templates/front-page.tsx</code> or discover more below.
-            </p>
-            <div className={styles.features}>
-              <div className={styles.feature}>
-                <h3>Page Templates</h3>
-                <p>
-                  Find templates in the the <code>wp-templates/</code> folder. These
-                  use the same convention as the{' '}
-                  <a href="https://developer.wordpress.org/themes/basics/template-hierarchy/">
-                    WordPress template hierarchy
-                  </a>
-                  , where <code>single.tsx</code> displays posts and{' '}
-                  <code>page.tsx</code> displays pages. Find page-specific CSS
-                  at <code>scss/wp-templates</code>, which is scoped to the page with{' '}
-                  <a href="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css">
-                    CSS modules
-                  </a>
-                  .
-                </p>
-              </div>
 
-              <div className={styles.feature}>
-                <h3>Global Styles and Fonts</h3>
-                <p>
-                  Add styles to load on every page, such as typography and
-                  layout rules, in <code>scss/main.scss</code>. The project adds{' '}
-                  <a href="https://necolas.github.io/normalize.css/">
-                    normalize.css
-                  </a>{' '}
-                  in <code>pages/_app.tsx</code>. Google Fonts are enqueued in{' '}
-                  <code>components/Header.tsx</code>.
-                </p>
-              </div>
-
-              <div className={styles.feature}>
-                <h3>Components</h3>
-                <p>
-                  Add or edit components in the <code>components/</code> folder.
-                  Find component styles at <code>scss/components</code>, which
-                  use{' '}
-                  <a href="https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css">
-                    CSS modules
-                  </a>{' '}
-                  to scope CSS to each component.
-                </p>
-              </div>
-
-              <div className={styles.feature}>
-                <h3>Hooks</h3>
-                <p>
-                  Fetch data from WordPress with <code>usePost</code>,{' '}
-                  <code>usePosts</code>, <code>useGeneralSettings</code> and
-                  other custom hooks. Use these hooks in your page templates to
-                  pass data to custom components. See{' '}
-                  <code>wp-templates/front-page.tsx</code> for examples.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
         <Posts
           posts={posts?.nodes}
           heading="Latest Posts"
@@ -102,19 +31,6 @@ export default function FrontPage(props: any): JSX.Element {
           count={6}
           id={styles.post_list}
         />
-        <CTA
-          title="Questions or comments?"
-          buttonText="Join the discussion on GitHub"
-          buttonURL="https://github.com/wpengine/headless-framework/discussions"
-          headingLevel="h2">
-          <p>
-            We welcome feature requests, bug reports and questions in the{' '}
-            <a href="https://github.com/wpengine/headless-framework">
-              Headless Framework GitHub repository
-            </a>
-            .
-          </p>
-        </CTA>
       </main>
       <Footer copyrightHolder={settings?.title} />
     </>
