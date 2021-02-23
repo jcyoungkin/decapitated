@@ -18,16 +18,7 @@ export default function FrontPage(props: any): JSX.Element {
           bgImage="https://dyn1.heritagestatic.com/lf?set=path%5B1%2F9%2F4%2F3%2F6%2F19436098%5D&call=url%5Bfile%3Aproduct.chain%5D"
           id={styles.home_hero}>
           <p>
-            Some great examples of the Headless Horseman include {' '}
-            <a href="https://disney.fandom.com/wiki/The_Headless_Horseman">
-              Disney's version
-            </a>
-            , as well as {' '}
-            <a href="https://en.wikipedia.org/wiki/Sleepy_Hollow_(film)">
-              Sleepy Hollow
-            </a>
-            , but don't forget to read about the <a href="https://en.wikipedia.org/wiki/The_Legend_of_Sleepy_Hollow">Legen of Sleepy Hollow</a> to
-            get a better understanding of where this fiction originates from.
+            Some great examples of the Headless Horseman include <a href="https://disney.fandom.com/wiki/The_Headless_Horseman">Disney's version</a>, as well as <a href="https://en.wikipedia.org/wiki/Sleepy_Hollow_(film)">Sleepy Hollow</a>, but don't forget to read about the <a href="https://en.wikipedia.org/wiki/The_Legend_of_Sleepy_Hollow">Legen of Sleepy Hollow</a> to get a better understanding of where this fiction originates from.
           </p>
         </Hero>
         <section className={styles.explore}>
