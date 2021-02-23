@@ -12,7 +12,7 @@ export default function FrontPage(props: any): JSX.Element {
       <Header title={settings?.title} description={settings?.description} />
       <main className="content">
         <Hero
-          title="Get Started with Headless"
+          title="Decapitate This!"
           buttonText="Developer Docs"
           buttonURL="https://developers.wpengine.com/"
           button2Text="Headless on GitHub"
